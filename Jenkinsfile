@@ -4,20 +4,18 @@ pipeline {
   stages {
     stage("Setup") {
       steps {
-        script {
-        sh ls
-        }
+        sh 'ls'
       }
     }
 
     stage("Execution") {
       steps {
-        // stuff goes here!
+        sh 'python --version'
       }
     }
     stage("Report") {
       steps {
-        // stuff goes here!
+        sh 'echo "report"'
       }
     }
 
