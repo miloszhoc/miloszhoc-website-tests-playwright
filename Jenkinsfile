@@ -4,7 +4,10 @@ pipeline {
   stages {
     stage("Setup") {
       steps {
+        sh 'pwd'
         sh 'ls'
+        sh 'ls ..'
+
       }
     }
 
@@ -18,6 +21,5 @@ pipeline {
         sh 'echo "report"'
       }
     }
-
   }
 }
